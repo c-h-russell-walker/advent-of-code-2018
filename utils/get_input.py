@@ -12,4 +12,4 @@ def get_from_url(url):
         }
     )
 
-    return resp.text()
+    return resp.text
