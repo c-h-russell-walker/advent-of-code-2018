@@ -9,6 +9,8 @@ https://adventofcode.com/2018
 
 `pip3 install -r requirements.txt`
 
+`pre-commit install`
+
 
 ### Notes:
 

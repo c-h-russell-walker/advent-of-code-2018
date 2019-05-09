@@ -31,10 +31,10 @@ def main():
     count = 0
     for y in range(max_y + 1):
         for x in range(max_x + 1):
-            if sum(
-                man_distance(x, y, coord.x, coord.y)
-                for coord in coords
-            ) < 10000:
+            if (
+                sum(man_distance(x, y, coord.x, coord.y) for coord in coords)
+                < 10000
+            ):
                 count += 1
     print(count)
 
