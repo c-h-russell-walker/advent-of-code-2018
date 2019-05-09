@@ -11,7 +11,9 @@ def main():
             mismatch_count = 0
             mismatch_idx = None
             if base_idx != idx:
-                for new_idx, (char_1, char_2) in enumerate(zip(inp, compare_inp)):
+                for new_idx, (char_1, char_2) in enumerate(
+                    zip(inp, compare_inp)
+                ):
                     if char_1 != char_2:
                         mismatch_count += 1
                         mismatch_idx = new_idx

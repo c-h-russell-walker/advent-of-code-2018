@@ -19,7 +19,7 @@ def main():
             if not isinstance(char, str):
                 raise Exception('Not a letter! {}'.format(char))
             if char.lower() == prev_char.lower() and char != prev_char:
-                polymer = polymer[:idx - 1] + polymer[idx + 1:]
+                polymer = polymer[: idx - 1] + polymer[idx + 1 :]
                 # Minus two for deletions and one more to account for incrementing below
                 idx = idx - 3
                 if idx < 0:

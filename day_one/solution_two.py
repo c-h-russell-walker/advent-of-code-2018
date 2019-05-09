@@ -37,9 +37,7 @@ def main():
             break
 
     freq, change = ctr.most_common(1)[0]
-    print(
-        'Freq: {}\nChange: {}'.format(freq, change)
-    )
+    print('Freq: {}\nChange: {}'.format(freq, change))
 
 
 if __name__ == '__main__':

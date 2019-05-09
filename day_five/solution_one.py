@@ -22,7 +22,7 @@ def main():
                 raise Exception('Not a letter! {}'.format(char))
             if char.lower() == prev_char.lower() and char != prev_char:
                 print('Removing {}{}'.format(polymer[idx - 1], polymer[idx]))
-                polymer = polymer[:idx - 1] + polymer[idx + 1:]
+                polymer = polymer[: idx - 1] + polymer[idx + 1 :]
                 # Minus two for deletions and one more to account for incrementing below
                 idx = idx - 3
 
